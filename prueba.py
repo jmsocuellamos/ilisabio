@@ -1,6 +1,12 @@
 # Carga de datos
 ###########################
 
+import os
+import numpy as np      # importamos numpy como np
+import pandas as pd     # importamos pandas como pd
+import math             # importamos módulo para cáculos matemáticos
+import random
+
 # Inputs originales
 url = 'https://raw.githubusercontent.com/jmsocuellamos/ilisabio/main/inputs_ori.csv'
 X = pd.read_csv(url)
