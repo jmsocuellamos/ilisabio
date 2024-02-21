@@ -1,6 +1,6 @@
 # Carga de datos
 ###########################
-
+pip install scikit-survival
 import os
 import numpy as np      # importamos numpy como np
 import pandas as pd     # importamos pandas como pd
