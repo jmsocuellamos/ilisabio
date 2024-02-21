@@ -1,6 +1,11 @@
 # Carga de datos
 ###########################
-pip install scikit-survival
+from sksurv.linear_model import CoxPHSurvivalAnalysis, CoxnetSurvivalAnalysis
+from sksurv.ensemble import RandomSurvivalForest
+from sksurv.metrics import (
+    concordance_index_censored,concordance_index_ipcw,cumulative_dynamic_auc
+)
+
 import os
 import numpy as np      # importamos numpy como np
 import pandas as pd     # importamos pandas como pd
