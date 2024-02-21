@@ -38,7 +38,7 @@ nombres_pp_m1 = ['ckd_epi', 'IC_eningreso_Yes', 'FEVI', 'Hbing',
                  'sum_charlson', 'FA_antec_Yes']
 inputs_m1 = X_pp[nombres_pp_m1].copy()
 
-rsf_m1 = RandomSurvivalForest(
+rsf_m1 = sksurv.ensemble.RandomSurvivalForest(
     n_estimators=1000, min_samples_split=10, min_samples_leaf=15, 
     n_jobs=-1, random_state=20
 )
